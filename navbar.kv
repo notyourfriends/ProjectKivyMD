@@ -1,0 +1,41 @@
+BoxLayout:
+	orientation: 'vertical'
+
+	MDToolbar:
+		title: 'Bottom Navbar'
+		md_bg_color: .2,.2,.2,1
+		specific_text_color: 0,1,1,1
+
+	MDBottomNavigation:
+		#color
+		panel_color: 1,1,0,.5
+
+		MDBottomNavigationItem:
+			name: 'screen 1'
+			text: 'Python'
+			icon: 'language-python'
+			# zavoloklom.github.io/material-design-iconic-font/icons.html for more icon
+			MDLabel:
+				text: 'This is Python Language'
+				halign: "center"
+
+		MDBottomNavigationItem:
+			name: 'screen 2'
+			text: 'Youtube'
+			icon: 'youtube'
+
+			MDLabel:
+				text: 'Welcome to Youtube'
+				halign: "center"
+
+
+		MDBottomNavigationItem:
+			name: 'screen 3'
+			text: 'Twitter'
+			icon: 'twitter'
+
+			MDLabel:
+				text: 'Twitter/Amafuuri'
+				halign: "center"
+
+
