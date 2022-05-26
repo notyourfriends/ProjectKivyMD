@@ -11,9 +11,18 @@ MDScreen:
 		pos_hint: {'top': 1}
 
 	MDSwiper:
+		id: swiper
 		size_hint_y: None
 		height: root.height - toolbar.height - dp(40)
 		y: root.height - self.height - toolbar.height - dp(20)
+
+		on_swiper:
+		on_pre_swiper:
+		on_overswipe_right:
+		on_overswipe_left:
+		on_swipe_left: app.on_swipe_left()
+		on_swipe_right: app.on_swipe_right()
+
 
 		MySwiper:
 			FitImage:
@@ -34,3 +43,31 @@ MDScreen:
 			FitImage:
 				source: 'images/dp.jpg'
 				radius: [20,]
+
+	MDBoxLayout:
+		orientation: 'horizontal'
+
+		MDRaisedButton:
+			text: 'Previous Image'
+			#main idea
+			#on_release: swiper.set_current(swiper.get_current_index()-1)
+			
+			#cara 1 menggunakan fungsi di python file
+			on_release: app.get_previous()
+
+			#cara 2 menulis fungsi di kv file
+			#on_release: if swiper.get_current_index() > 0: swiper.set_current(swiper.get_current_index()-1)
+
+		MDRaisedButton:
+			text: 'Next Image'
+			#main idea
+			#on_release: swiper.set_current(swiper.get_current_index()+1)
+
+			#cara 1 menulis fungsi di python file
+			on_release: app.get_next()
+
+			#cara 2 menulis fungsi di kv file
+			#on_release: if swiper.get_current_index() < len(swiper.get_items())-1: swiper.set_current(swiper.get_current_index()+1)
+			
+
+			#len(swiper.get_items())
