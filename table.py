@@ -13,6 +13,11 @@ class MainApp(MDApp):
 			pos_hint = {'center_x': .5, 'center_y': .5},
 			size_hint = (0.9, 0.6),
 			check = True,
+			use_pagination = True,
+			rows_num = 3, 
+			pagination_menu_height = '240dp',
+			pagination_menu_pos = 'auto', #doesn't work
+			background_color = [1,0,0,.5], #doesn't work
 
 			column_data = [
 				('First Name', dp(30)),
@@ -23,6 +28,94 @@ class MainApp(MDApp):
 			row_data = [
 				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
 				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				('Muhamad Refo', 'Alpha Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
+				(' Refo', ' Rizky', 'refo.alpha@gmail.com', '081255667780'),
+				('Fuu', 'Nii', 'fuunii99@gmail.com', '085719328218'),
+
 			]
 
 			)
