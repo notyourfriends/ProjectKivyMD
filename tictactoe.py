@@ -1,4 +1,3 @@
-from turtle import title
 from kivy.lang import Builder
 from kivymd.app import MDApp
 
