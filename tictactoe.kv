@@ -56,10 +56,23 @@ MDFloatLayout:
         font_size : "32sp"
         text: "X Goes First!"
         halign: "center"
-        pos_hint: {"center_y": .3}
+        pos_hint: {"center_y": .35}
 
     MDRaisedButton:
         id: restart
         text: "Restart the Game"
-        pos_hint:{"center_x":.5, "center_y":.15}
+        pos_hint:{"center_x":.5, "center_y":.23}
         on_release: app.restart()
+    
+    MDLabel:
+        id: highscore
+        font_size : "15sp"
+        text: "X Wins: 0 || O wins: 0"
+        halign: "center"
+        pos_hint: {"center_x": .5,"center_y": .05}
+
+    MDRaisedButton:
+        id: reset
+        text: "Reset Score"
+        pos_hint:{"center_x":.5, "center_y":.15}
+        on_release: app.reset()

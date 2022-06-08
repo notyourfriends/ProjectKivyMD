@@ -1,7 +1,9 @@
+from turtle import title
 from kivy.lang import Builder
 from kivymd.app import MDApp
 
 class MainApp(MDApp):
+    title = "Tic Tac Toe!"
     def build(self):
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette ="BlueGray"
@@ -12,6 +14,10 @@ class MainApp(MDApp):
 
     #Keep track of win or lose
     winner = False
+
+    # Keep track of winners and losers
+    X_win = 0
+    O_win = 0
 
     #End The Game
     def end_game(self, a,b,c):
@@ -25,6 +31,14 @@ class MainApp(MDApp):
 
         #Set Label for winner
         self.root.ids.score.text = f"{a.text} Wins"
+
+        #Keep track of winners and loser
+        if a.text == "X":
+            self.X_win = self.X_win + 1
+        else:   
+            self.O_win = self.O_win + 1    
+        
+        self.root.ids.highscore.text = f"X Wins: {self.X_win} || O wins: {self.O_win}"
 
     def disable_all_buttons(self):
         #Disable the Buttons
@@ -135,5 +149,8 @@ class MainApp(MDApp):
         self.root.ids.btn7.text = ""
         self.root.ids.btn8.text = ""
         self.root.ids.btn9.text = ""
+
+    def reset(self):
+       self.root.ids.highscore.text = f"X Wins: 0 || O wins: 0"
 
 MainApp().run()
