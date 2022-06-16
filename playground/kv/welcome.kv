@@ -1,0 +1,38 @@
+<Welcome>:
+    MDFloatLayout:
+        md_bg_color: 1,1,1,1
+    Image:
+        source:'assets/images/welcome.jpg'
+        size_hint: .9, .9
+        pos_hint: {'center_x': .5, 'center_y': .6}
+        allow_stretch: True
+    MDLabel:
+        text: "H e l l o"
+        halign: 'center'
+        font_name: 'MAIAN'
+        font_size: 15
+        pos_hint: {'center_y':.45}
+    MDLabel:
+        text: 'Selamat Datang di Toko'
+        font_name: 'PrestigeB'
+        font_size: 15
+        halign: 'center'
+        size_hint_x: .5
+        pos_hint: {'center_x':.5, 'center_y':.4}
+        color: rgba(127,127,127,255)
+    MDFillRoundFlatButton:
+        text: '[b]LOGIN[/b]'
+        markup: True
+        font_name: 'PrestigeB'
+        pos_hint: {'center_x':.5, 'center_y':.3}
+        size_hint: .5, .065
+        halign: 'center'
+        on_release: root.manager.current = 'login'
+    MDRoundFlatButton:
+        text: '[b]SIGN UP[/b]'
+        markup: True
+        font_name: 'PrestigeB'
+        pos_hint: {'center_x':.5, 'center_y':.2}
+        halign: 'center'
+        size_hint: .5, .065
+        on_release: root.manager.current = 'signup'
